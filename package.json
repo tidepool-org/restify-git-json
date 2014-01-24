@@ -12,6 +12,20 @@
     "type": "git",
     "url": "git://github.com/tidepool-org/restify-git-json.git"
   },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "lib/events/index",
+        "lib/api",
+        "lib/handlers",
+        "lib/middleware",
+        "lib/stream"
+      ]
+    },
+    "travis-cov": {
+      "threshold": 70
+    }
+  },
   "dependencies": {
     "js-git": "~0.6.1",
     "restify": "~2.6.0",
@@ -22,5 +36,16 @@
     "event-stream": "~3.0.20",
     "formidable": "~1.0.14",
     "git-pkt-line": "~0.1.0"
+  },
+  "devDependencies": {
+    "should": "~3.0.1",
+    "tape": "~2.3.2",
+    "mocha": "~1.17.0",
+    "travis-cov": "~0.2.4",
+    "blanket": "~1.1.6",
+    "coveralls": "~2.6.1",
+    "mime-multipart-stream": "~0.1.2",
+    "request": "~2.33.0",
+    "mocha-lcov-reporter": "0.0.1"
   }
 }
